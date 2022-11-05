@@ -21,7 +21,7 @@ function App(){
 
   const [userCreds] = useState(2019001599);
   const [inputNum,setNumber] = useState(0);
-  const [disp,setDisp] = useState("Enter Code");
+  const [disp,setDisp] = useState("ENTER CODE");
 
   const numberClickHandler =(e) => {
     e.preventDefault();
@@ -39,11 +39,11 @@ function App(){
 
   const enterClickHandler =() => {
     if(inputNum == userCreds) {
-      setDisp("Open");
+      setDisp("OPEN");
       console.log(inputNum +'|'+disp +'|'+ userCreds);
     } 
     else {
-      setDisp("Locked");
+      setDisp("LOCKED");
       console.log(inputNum +'|'+disp +'|'+ userCreds);
     }
     
@@ -51,7 +51,7 @@ function App(){
   
   const clearClickHandler =() => {
     setNumber(0);
-    setDisp("Enter Code");
+    setDisp("ENTER CODE");
     console.log(inputNum +'|'+disp +'|'+ userCreds);
   }
 
